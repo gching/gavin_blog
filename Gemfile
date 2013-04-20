@@ -7,10 +7,15 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
+gem 'haml'
+
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
   gem 'guard-rspec', '1.2.1'
+  gem 'guard-spork', :github => 'guard/guard-spork'
+  gem 'spork'
+  gem "spork-testunit"
 end
 
 # Gems used only for assets and not required
