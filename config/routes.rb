@@ -1,4 +1,13 @@
 GavinBlog::Application.routes.draw do
+  
+
+  devise_for :users
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
+
+  
+
+  resources :posts
 
   root to: 'general_pages#home'
   match '/about',  to: 'general_pages#about'

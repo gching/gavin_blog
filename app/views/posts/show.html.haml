@@ -1,0 +1,6 @@
+- provide(:title, 'About')
+%div{:class => ["center", "leaderboard"], :style => "overflow: auto;" }
+	%h2
+		= @post.title
+	%p 
+		= wrap(@post.content)

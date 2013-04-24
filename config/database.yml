@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: appname_development
+  database: gavinblog_development
   pool: 5
   timeout: 5000
   username: gching
@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: appname_test
+  database: gavinblog_test
   pool: 5
   timeout: 5000
   username: gching
