@@ -1,0 +1,11 @@
+
+
+  background: url(luffy.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0px -120px;
+
+  
+  <%= link_to image_tag('logofinal.png'), root_path, id: "logo" %>
