@@ -1,0 +1,6 @@
+$("#posts").append("<%= escape_javascript(render(@posts)) %>"
+<% if (@posts.current_page < @posts.num_pages) %>
+  $('.pagination').replaceWith('<%= j paginate(@posts) %>');
+<% else %>
+  $('.pagination').remove();
+<% end %>

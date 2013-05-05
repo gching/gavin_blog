@@ -1,12 +1,20 @@
 <li id="<%= feed_item.id %>">
-	<span class ="titlepost">
+	<div class ="titlepost">
 		<%= link_to feed_item.title, feed_item %>
-	</span>
+	</div>
     <span class="content">
-    	<%= wrap(truncate feed_item.content, length: 50) %>
-    	<%= link_to 'read more', feed_item %> 
+    	<%= wrap(truncate feed_item.content, length: 360) %>
     </span>
-    <span class="timestamp">
+    <% if feed_item.content.length >360 %>
+    <div class="readmore">
+        <%= link_to "read more", feed_item %> 
+    </div>
+    <div class = "timestamp2">
+        Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
+    </div>
+    <% else %>
+    <div class="timestamp">
       Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
-    </span>
+    </div>
+    <% end %>
 </li>

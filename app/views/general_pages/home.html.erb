@@ -1,13 +1,22 @@
-<div class="row">
-    <div class="span8">
-      <h1>Posts</h1>
-      <%= render 'shared/feed' %>
+
+   <div class="row-fluid">
+      <div class="span10">
+        <%= render 'shared/feed' %>
+      </div>
+      <div class="span2 sideuser">
+        <div class="addmore">
+
+        <section>
+        	<div class= "derp">
+            <div class="span7">
+              <h4>Gavin Ching</h4>
+              <h6>My Dreams and my Goals</h6>
+              <h6>My Successes and failures</h6>
+            </div>
+          <%= gravatar_for size: 50 %>
+     		 </div>
+        </section>
+
+      </div>
     </div>
-    <aside class="span4 sideuser">
-      <section>
-      	<div class= "derp">
-        <%= gravatar_for size: 50 %>
-   		 </div>
-      </section>
-    </aside>
-</div>
+    </div>
