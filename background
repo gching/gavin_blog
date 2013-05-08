@@ -1,4 +1,4 @@
-
+<button onclick="showPopWin('popup.html', 800, 400, null);">show modal window button</button>
 
   background: url(luffy.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;

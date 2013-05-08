@@ -10,7 +10,7 @@ gem 'bootstrap-will_paginate', '0.0.6'
 gem 'haml', '3.1.4'
 gem 'devise'
 gem 'rails_admin'
-
+gem 'RedCloth', '4.2.3'
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'

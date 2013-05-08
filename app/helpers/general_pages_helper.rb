@@ -8,9 +8,9 @@ module GeneralPagesHelper
   # Returns the Gravatar (http://gravatar.com/) for the given user.
   def gravatar_for(options)
     gravatar_id = Digest::MD5::hexdigest("gavinchingy@gmail.com")
-    size = options[:size]
+    sizeInput = options[:size]
     gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}"
-    image_tag(gravatar_url, alt: "gavin", class: "gravatar")
+    image_tag(gravatar_url, size: "#{sizeInput}x#{sizeInput}", alt: "gavin", class: "gravatar")
   end
 
 

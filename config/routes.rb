@@ -12,6 +12,8 @@ GavinBlog::Application.routes.draw do
   root to: 'general_pages#home'
   match '/about',  to: 'general_pages#about'
   match '/contact',  to: 'general_pages#contact'
+  match '/popup', to: 'general_pages#popup'
+  match '/loading', to: 'general_pages#loading'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
