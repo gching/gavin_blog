@@ -56,7 +56,7 @@ module GavinBlog
     # Enable the asset pipeline
     config.assets.enabled = true
     config.assets.initialize_on_precompile = false
-    config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
+    config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js', 'rich/editor.css', 'rich/base.js']
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
