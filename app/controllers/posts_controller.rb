@@ -11,4 +11,9 @@ class PostsController < ApplicationController
   def destroy
   end
 
+  def index
+  	@posts  = Post.paginate(page: params[:page])
+
+  end
+
 end
