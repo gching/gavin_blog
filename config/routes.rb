@@ -1,6 +1,8 @@
 GavinBlog::Application.routes.draw do
   
 
+  mount Rich::Engine => '/rich', :as => 'rich'
+
   devise_for :users, :controllers => { :registrations => "registrations" }
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 

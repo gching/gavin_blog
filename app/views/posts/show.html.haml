@@ -1,6 +1,6 @@
 - provide(:title, 'About')
 %div{:class => ["postshow", "leaderboard"], :style => "overflow: auto;" }
 	%h2
-		= @post.title
+		= raw(@post.title)
 	%p
-		= wrap(RedCloth.new(@post.content).to_html)
+		= raw(@post.content)

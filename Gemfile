@@ -11,6 +11,7 @@ gem 'haml', '3.1.4'
 gem 'devise'
 gem 'rails_admin'
 gem 'RedCloth', '4.2.3'
+gem 'rich'
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'

@@ -3,7 +3,7 @@
 		<%= link_to feed_item.title, feed_item %>
 	</div>
     <span class="content">
-    	<%= wrap(truncate RedCloth.new(feed_item.content).to_html, length: 360) %>
+        <%=wrap(raw(truncate feed_item.content, length: 360)) %>
     </span>
     <% if feed_item.content.length >360 %>
     <div class="readmore">
