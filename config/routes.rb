@@ -14,6 +14,10 @@ GavinBlog::Application.routes.draw do
   root to: 'general_pages#home'
   match '/about',  to: 'general_pages#about'
   match '/contact',  to: 'general_pages#contact'
+
+  match '/feed' => 'posts#feed',
+      :as => :feed,
+      :defaults => { :format => 'atom' }
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
