@@ -1,0 +1,7 @@
+<div class="leaderboard">
+	<h1>Contact Me</h1>
+<%= form_for @contact do |f| %>
+<%= render 'fields', f: f %>
+<%= f.submit "Send Message", class: "btn btn-large btn-primary" %>
+<% end %>
+</div>

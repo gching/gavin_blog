@@ -11,3 +11,13 @@
   <%= link_to image_tag('logofinal.png'), root_path, id: "logo" %>
 
   <%= wrap(truncate RedCloth.new(feed_item.content).to_html, length: 360) %>
+
+
+  <% else %>
+    <div class = "container">
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, id: "flash_#{name}" %>
+      <% end %>
+    <%= yield %>
+    </div>
+  <% end %>

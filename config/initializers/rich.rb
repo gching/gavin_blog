@@ -5,6 +5,12 @@ if Object.const_defined?("Rich")
 
   #youtube
   config.editor[:allow_embeds] = true  
+
+  Paperclip::Attachment.default_options.merge!(
+  :storage => :dropbox,
+  :dropbox_credentials => "#{Rails.root}/config/dropbox.yml"
+  }
+
     
     # == CKEditor configuration
     # 

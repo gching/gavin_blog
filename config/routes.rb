@@ -10,10 +10,12 @@ GavinBlog::Application.routes.draw do
   
 
   resources :posts
+  resources :contacts
 
   root to: 'general_pages#home'
   match '/about',  to: 'general_pages#about'
-  match '/contact',  to: 'general_pages#contact'
+  match '/contact' => 'contacts#new', :as => 'contacts', :via => :get
+  match '/contact' => 'contacts#create', :as => 'contacts', :via => :post
 
   match '/feed' => 'posts#feed',
       :as => :feed,
