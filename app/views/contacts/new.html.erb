@@ -1,7 +1,19 @@
-<div class="leaderboard">
-	<h1>Contact Me</h1>
-<%= form_for @contact do |f| %>
-<%= render 'fields', f: f %>
-<%= f.submit "Send Message", class: "btn btn-large btn-primary" %>
-<% end %>
+<div class="hero-unit span10">
+	<div class="center">
+		<h2>Contact Me</h2>
+	</div>
+	<div class="row">
+	  	<div class="span6">
+			<%= form_for @contact do |f| %>
+			<%= render 'fields', f: f %>
+			<%= f.submit "Send Message", class: "btn btn-large btn-primary" %>
+			<% end %>
+			
+		</div>
+		<div class="thumbnail span3 center paddingpic">
+				<%=image_tag "contactme.jpg"%>
+			</div>
+	</div>
+
 </div>
+<%= render 'shared/sidebar'%>

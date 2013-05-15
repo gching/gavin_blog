@@ -1,7 +1,8 @@
 - provide(:title, 'About')
-%div{:class => ["center", "leaderboard"], :style => "overflow: auto;" }
+%div{:class => ["center", "hero-unit", "span10"], :style => "overflow: auto;" }
 	%h2 About
 	%div{:class => ["thumbnail", "span3"], :style => "margin-right: 20px;"}
 		=image_tag "akb.jpg"
 	%p 
 		= wrap("My name is Gavin Ching, a Computer Engineering student at the University of Toronto. This blog is used to let people get a taste of what Gavin is, but most importantly, it is to give me the motivation to acheive my dream of finding myself. This might be cheesy, but how I will do this, I don't even know, but I know for sure that by documenting everything that I do will help me understand more about myself. Throughout my life, I have never realized that challenging opportunities and experiences is what helps me develop more as a person. It is scary I don't have the slightest clue about what I want, what I want to acheive, and where I can be the most happiest, but my life would not be fun without this. My journey towards finding myself will be filled with challenges, and I do not know where it will lead. There might be no finish line and no end goal, but that gives me the most thrill, not knowing where I will go. So let me take you with me on this journey of finding myself, and find that finish line that only a few have reached.")
+= render 'shared/sidebar'
