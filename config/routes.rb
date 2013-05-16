@@ -16,6 +16,7 @@ GavinBlog::Application.routes.draw do
   match '/about',  to: 'general_pages#about'
   match '/contact' => 'contacts#new', :as => 'contacts', :via => :get
   match '/contact' => 'contacts#create', :as => 'contacts', :via => :post
+  match '/blog', to: 'general_pages#blog'
 
 
   match '/feed' => 'posts#feed',

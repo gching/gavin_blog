@@ -1,5 +1,5 @@
 class GeneralPagesController < ApplicationController
-  def home
+  def blog
   	@feed_items = Post.paginate(page: params[:page])
   end
 
@@ -7,5 +7,8 @@ class GeneralPagesController < ApplicationController
   end
 
   def contact
+  end
+
+  def home
   end
 end

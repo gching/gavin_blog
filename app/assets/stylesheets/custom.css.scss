@@ -1,5 +1,6 @@
 @import "bootstrap";
 
+
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
@@ -15,6 +16,19 @@ $grayMediumLight: #eaeaea;
 }
 .container-fluid {
   min-width: 1200px;
+}
+
+.hero-unit {
+  h2 {
+    padding-left: 0px;
+    border-bottom: 1px solid black;
+  }
+   p{
+    padding-top: 10px;
+    font-size: 18px;  
+    line-height: 27px;
+    font-family:Verdana;
+  }
 }
 
 .leaderboard {  
