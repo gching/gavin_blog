@@ -8,7 +8,9 @@ if Object.const_defined?("Rich")
 
   Paperclip::Attachment.default_options.merge!({
   :storage => :dropbox,
-  :dropbox_credentials => "#{Rails.root}/config/dropbox.yml"
+  :dropbox_credentials => "#{Rails.root}/config/dropbox.yml",
+  :dropbox_options => {
+        :unique_filename => true}
   }
   )
 
