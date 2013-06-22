@@ -14,6 +14,7 @@ gem 'RedCloth', '4.2.3'
 gem 'rich'
 gem 'active_attr'
 gem 'paperclip-dropbox'
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
